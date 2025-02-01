@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-style: none;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    top: 100px;
+    left: 815px;
+
+}
+input{
+    width: 300px;
+    height: 70px;
+
+    text-align: center;
+
+    margin-bottom: 32px;
+    border-radius: 20px;
+
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px;
+    background-color: grey;
+
+    appearance: textfield;
+}
+input:focus{
+    outline: none;
+}
+label{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.div-btn{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: darkslategrey;
+}
+button{
+    width: 125px;
+    height: 75px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    box-shadow: 4px 4px 4px;
+    border: 2px solid black;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: black;
+    background-color: darkgrey;
+    transition: background-color 0.65s; 
+}
+
+button:hover{
+    background-color: lightgrey;
+}
+
+.limpar{
+    position: absolute;
+    bottom: 325px;
+    right: 890px;
+}
+
+.resultado{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 75px;
+
+    opacity: 0;
+
+    bottom: 0;
+
+    background-color: lightslategrey;
+    border: 2px solid black;
+    
+    border-radius: 25px;
+}
+
+.form-fracao{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    opacity: 0;
+}
+
+.calcular{
+    position: absolute;
+    right: 875px;
+    bottom: 575px;
+    width: 110px;
+    opacity: 0;
+    border-radius: 30px;
+}
+
+.resultado-fracao{
+    margin-left: 800px;
+    opacity: 0;
+}
