@@ -21,7 +21,6 @@ form{
 
     top: 100px;
     left: 815px;
-
 }
 input{
     width: 300px;
@@ -120,7 +119,7 @@ button:hover{
 .calcular{
     position: absolute;
     right: 875px;
-    bottom: 575px;
+    bottom: 0px;
     width: 110px;
     opacity: 0;
     border-radius: 30px;

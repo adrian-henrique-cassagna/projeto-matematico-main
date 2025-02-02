@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operações</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="operacoes.js"></script>
 </head>
 
 <body>
@@ -17,24 +16,30 @@
         <section class="container-forms">
 
             <form id="form-soma">
+
                 <label for="valor-01">Primeiro numero</label>
                 <input type="number" id="valor1" name="valo-01">
                 <label for="valor-01">Segundo Numero</label>
                 <input type="number" id="valor2" name="valo-02">
+
             </form>
 
             <form class="form-fracao" id="form-fracao">
+
                 <label for="valor-03">Terceiro numero</label>
                 <input class="fracao1" type="number" id="valor3" name="valo-3">
                 <label for="valor-04">Quarto Numero</label>
                 <input class="fracao2" type="number" id="valor4" name="valo-04">
+
             </form>
 
             <form class="resultado-fracao" id="resultado-fracao">
+
                 <label for="resultado1">denominandor</label>
                 <input class="resultado1" type="number" id="resultado-01" name="resultado1">
                 <label for="resultado2">numerador</label>
                 <input class="resultado2" type="number" id="resultado-02" name="resultado2">
+
             </form>
 
         </section>
@@ -51,7 +56,7 @@
                 <div><button onclick="porcentagem()" id="porcentagem">porcentagem</button></div>
                 <div><button onclick="fracao()" id="fracao">fração</button></div>
                 <div><button onclick="calcular()" id="calcular" class="calcular">calcular</button></div>
-                <div><button onclick="limpar()" class="limpar">limpar</button></div>
+                <div><button onclick="limpar()" class="limpar" id="limpar">limpar</button></div>
 
             </div>
 
@@ -64,7 +69,9 @@
         </section>
 
     </main>
-    
+
+    <script src="operacoes.js"></script>
+
 </body>
 
 </html>
