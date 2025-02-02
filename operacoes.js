@@ -17,7 +17,8 @@ function soma(){
         document.getElementById('resultado').style.transition = 'margin-bottom 1.5s, opacity 1.5s, margin-left 1s';
 
         document.getElementById('form-soma').style.marginLeft = '0';
-        document.getElementById('calcular').style.display = 'none'
+
+        document.getElementById('calcular').style.display = 'none';
 
         document.getElementById('resultado-fracao').style.opacity = '0';
 
@@ -47,7 +48,8 @@ function subtrair(){
         document.getElementById('resultado').style.transition = 'margin-bottom 1.5s, opacity 1.5s, margin-left 1s';
 
         document.getElementById('form-soma').style.marginLeft = '0';
-        document.getElementById('calcular').style.display = 'none'
+
+        document.getElementById('calcular').style.display = 'none';
         
         document.getElementById('resultado-fracao').style.opacity = '0';
 
@@ -77,9 +79,7 @@ function multiplicar(){
         document.getElementById('resultado').style.transition = 'margin-bottom 1.5s, opacity 1.5s, margin-left 1s';
 
         document.getElementById('form-soma').style.marginLeft = '0';
-        document.getElementById('calcular').style.display = 'none'
-
-        document.getElementById('limpar').style.top = '635px'
+        document.getElementById('calcular').style.display = 'none';
 
         document.getElementById('resultado-fracao').style.opacity = '0';
 
@@ -102,7 +102,7 @@ function dividir(){
     if(isNaN(v1) || isNaN(v2) || v1 === 0 || v2 === 0){
         document.getElementById('resultado').style.opacity = '0';
         document.getElementById('resultado').style.marginBottom = '0';
-        document.getElementById('resultado').innerHTML = ''
+        document.getElementById('resultado').innerHTML = '';
     }
     else{
         document.getElementById('resultado').style.opacity = '1';
@@ -111,9 +111,7 @@ function dividir(){
         document.getElementById('resultado').style.transition = 'margin-bottom 1.5s, opacity 1.5s, margin-left 1s';
 
         document.getElementById('form-soma').style.marginLeft = '0';
-        document.getElementById('calcular').style.display = 'none'
-
-        document.getElementById('limpar').style.top = '635px'
+        document.getElementById('calcular').style.display = 'none';
 
         document.getElementById('resultado-fracao').style.opacity = '0';
 
@@ -144,7 +142,7 @@ function porcentagem(){
         document.getElementById('resultado').style.transition = 'margin-bottom 1.5s, opacity 1.5s, margin-left 1s';
 
         document.getElementById('form-soma').style.marginLeft = '0';
-        document.getElementById('calcular').style.display = 'none'
+        document.getElementById('calcular').style.display = 'none';
 
         document.getElementById('resultado-fracao').style.opacity = '0';
 
@@ -175,9 +173,9 @@ function fracao(){
         document.getElementById('form-soma').style.marginLeft = '325px';
         document.getElementById('form-soma').style.transition = 'margin-left 1.75s';
 
-        document.getElementById('resultado-fracao').style.opacity = '0'
-        document.getElementById('resultado-fracao').style.marginLeft = '900px'
-        document.getElementById('resultado-fracao').style.transition = 'opacity 1s, margin-left 1s'
+        document.getElementById('resultado-fracao').style.opacity = '0';
+        document.getElementById('resultado-fracao').style.marginLeft = '900px';
+        document.getElementById('resultado-fracao').style.transition = 'opacity 1s, margin-left 1s';
 
         document.getElementById('resultado').style.marginBottom = '725px';
         document.getElementById('resultado').style.marginLeft = '900px';
@@ -202,9 +200,9 @@ function fracao(){
         document.getElementById('form-soma').style.marginLeft = '325px';
         document.getElementById('form-soma').style.transition = 'margin-left 1.2s';
 
-        document.getElementById('resultado-fracao').style.opacity = '0'
-        document.getElementById('resultado-fracao').style.marginLeft = '900px'
-        document.getElementById('resultado-fracao').style.transition = 'opacity 1s, margin-left 1s'
+        document.getElementById('resultado-fracao').style.opacity = '0';
+        document.getElementById('resultado-fracao').style.marginLeft = '900px';
+        document.getElementById('resultado-fracao').style.transition = 'opacity 1s, margin-left 1s';
 
         document.getElementById('resultado').style.marginBottom = '725px';
         document.getElementById('resultado').style.marginLeft = '900px';
@@ -262,8 +260,8 @@ function calcular(){
 
                 if (numerador % i === 0 && denominador % i === 0) {
 
-                    document.getElementById('resultado-01').value = `${(n1 * n4 + n3 * n2) / i}`
-                    document.getElementById('resultado-02').value = `${n4 * n2 / i}`
+                    document.getElementById('resultado-01').value = `${(n1 * n4 + n3 * n2) / i}`;
+                    document.getElementById('resultado-02').value = `${n4 * n2 / i}`;
                 }
             }
         }
@@ -273,11 +271,11 @@ function calcular(){
             for(let x = 2; x <= numerador && x <= denominador; x++){
                 if(numerador % x === 0 && denominador % x === 0){
 
-                    let v1 = n1 * 2
-                    let v2 = n1 - v1
+                    let v1 = n1 * 2;
+                    let v2 = n1 - v1;
 
-                    document.getElementById('resultado-01').value = `${(v2 * n4 + n2 * n3) / x}`
-                    document.getElementById('resultado-02').value = `${(n2 * n4) / x}`
+                    document.getElementById('resultado-01').value = `${(v2 * n4 + n2 * n3) / x}`;
+                    document.getElementById('resultado-02').value = `${(n2 * n4) / x}`;
                 }
             }
         }
@@ -291,13 +289,13 @@ function calcular(){
 
 
 function limpar(){
-    document.getElementById('valor1').value = '0'
-    document.getElementById('valor2').value = '0'
-    document.getElementById('valor3').value = '0'
-    document.getElementById('valor4').value = '0'
+    document.getElementById('valor1').value = '0';
+    document.getElementById('valor2').value = '0';
+    document.getElementById('valor3').value = '0';
+    document.getElementById('valor4').value = '0';
 
-    document.getElementById('resultado-01').value = '0'
-    document.getElementById('resultado-02').value = '0'
+    document.getElementById('resultado-01').value = '0';
+    document.getElementById('resultado-02').value = '0';
 
     document.getElementById('form-fracao').style.opacity = '0';
     document.getElementById('form-fracao').style.marginLeft = '0';
@@ -311,7 +309,7 @@ function limpar(){
     document.getElementById('form-soma').style.marginLeft = '0';
 
     document.getElementById('calcular').style.opacity = '0';
-    document.getElementById('calcular').style.display = 'none'
+    document.getElementById('calcular').style.display = 'none';
 
     document.getElementById('resultado-fracao').style.opacity = '0';
 }
